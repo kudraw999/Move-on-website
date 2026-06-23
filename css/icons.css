@@ -1,0 +1,41 @@
+/* ==========================================
+   icons.css — SVG 圖示獨立樣式
+   供所有頁面共用引用
+   ========================================== */
+
+/* 社群媒體圖示列 */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: clamp(2rem, 6vw, 4.8rem);
+  margin-bottom: 2.1rem;
+}
+
+.socials a {
+  color: #d9d9d9;
+  line-height: 1;
+  transition: color .2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.socials a:hover {
+  color: #fff;
+}
+
+.social-icon {
+  width: clamp(2.4rem, 4.5vw, 3.6rem);
+  height: clamp(2.4rem, 4.5vw, 3.6rem);
+  fill: currentColor;
+  display: block;
+}
+
+/* 頁尾聯絡資訊圖示 */
+.info-icon {
+  color: #d6d6d6;
+  width: clamp(1.8rem, 3vw, 2.6rem);
+  height: clamp(1.8rem, 3vw, 2.6rem);
+  flex: 0 0 auto;
+  fill: currentColor;
+}
