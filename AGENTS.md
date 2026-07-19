@@ -181,6 +181,29 @@ Select-String -Path .\index.html -Pattern "https://|cdn"
 - 文字內容以繁體中文為主
 - 公司英文名稱目前為：`Move information Co., Ltd.`
 
+## 自訂 JavaScript
+
+自訂互動腳本統一寫在：
+
+```text
+js/main.js
+```
+
+請在 `index.html` 中於 `bootstrap.bundle.min.js` 之後載入：
+
+```html
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+```
+
+### 已實作事件
+
+| 元素 | id | 事件 | 說明 |
+|------|----|------|------|
+| 加入購物車按鈕 | `addToCartBtn` | `click` | 顯示 alert，並發送 GA4 `add_to_cart` 事件 |
+
+GA4 事件規格（`add_to_cart`）依 Google Analytics 4 電商事件標準，包含 `currency`、`value`、`items` 陣列等參數。`gtag` 函式由 `index.html` 頭部的全域 GA4 腳本提供，`main.js` 可直接呼叫。
+
 ## 交接備註
 
 本網站目前為靜態頁面，可直接用瀏覽器開啟 `index.html` 預覽，不需要啟動開發伺服器。
