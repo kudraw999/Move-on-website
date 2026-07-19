@@ -221,3 +221,15 @@ GA4 事件規格（`add_to_cart`）依 Google Analytics 4 電商事件標準，�
 ```html
 <script src="js/bootstrap.bundle.min.js"></script>
 ```
+
+##github
+
+### HTTPS
+https://github.com/kudraw999/Move-on-website.git
+### SSH
+git@github.com:kudraw999/Move-on-website.git
+
+##對外發佈網址
+
+https://kudraw999.github.io/Move-on-website/
+
