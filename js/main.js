@@ -28,4 +28,5 @@ document.getElementById('addToCartBtn').addEventListener('click', function (e) {
       }
     ]
   });
+  window.location.href = 'goal.html';
 });
