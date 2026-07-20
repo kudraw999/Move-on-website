@@ -86,6 +86,29 @@ body {
   object-position: center;
 }
 
+.hero-carousel .carousel-item {
+  position: relative;
+}
+
+.hero-carousel .carousel-caption.thank-you-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0;
+}
+
+.hero-carousel .carousel-caption.thank-you-caption h3 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
+}
+
 .section-title {
   color: var(--move-blue);
   font-weight: 400;
